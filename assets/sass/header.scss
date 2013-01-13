@@ -1,0 +1,68 @@
+.header {
+	
+	background-color:$fogdog;
+	height:40px;
+	
+	.site-name {
+		padding:0px 5px;
+		font-size:1.7em;
+		float:left;
+		text-transform:uppercase;
+		@include fontCooper;
+	}
+	
+	.slide-trigger {
+		display:none;
+		float:left;
+		padding:8px 5px;
+		font-size:20px;
+		color:$white;
+		-webkit-font-smoothing:antialiased;
+		@include trans();
+		@media screen and (max-width:560px) {
+			display:block;
+			float:right;
+			&:hover {
+				cursor:pointer;
+				color:$dark-blue;
+			}
+			&:after {
+				content:"";
+				clear:both;
+			}
+		}
+	}
+	
+	.nav {
+		
+		padding:10px 0px;
+		font-size:15px;
+		float:left;
+		
+		a {
+			padding:13px 10px;
+			&:hover {
+				background-color:$light-orange;
+			}
+			&:active {
+				background-color:$dark-orange;
+			}
+		}
+		
+		@media screen and (max-width:560px) {
+			display:block;
+			float:left;
+			width:360px;
+			&:before, &:after{
+				content: "";
+				clear:both;
+			}
+		}
+		@media screen and (max-width:360px) {
+			display:none;
+			width:200px;
+		}
+		
+	}
+	
+}

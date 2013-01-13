@@ -1,3 +1,4 @@
+<?php require("core/init.inc.php"); ?>
 <!DOCTYPE html>
 <html>
 	<head>
@@ -19,6 +20,5 @@
 				
 			</div>
 		</div>
-		
 	</body>
 </html>

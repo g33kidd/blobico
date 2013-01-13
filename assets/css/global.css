@@ -1,0 +1,127 @@
+@font-face {
+  font-family: 'icomoon';
+  src: url("../fonts/icomoon.eot");
+  src: url("../fonts/icomoon.eot?#iefix") format("embedded-opentype"), url("../fonts/icomoon.svg#icomoon") format("svg"), url("../fonts/icomoon.woff") format("woff"), url("../fonts/icomoon.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+[data-icon]:before {
+  font-family: 'icomoon';
+  content: attr(data-icon);
+  speak: none;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased; }
+
+/* Use the following CSS code if you want to have a class per icon */
+/*
+Instead of a list of all class selectors,
+you can use the generic selector below, but it's slower:
+[class*="icon-"]:before {
+*/
+.icon-home:before, .icon-user:before, .icon-paragraph-justify:before, .icon-arrow-down:before, .icon-arrow-up:before, .icon-move-vertical-alt1:before {
+  font-family: 'icomoon';
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased; }
+
+.icon-home:before {
+  content: "\e001"; }
+
+.icon-user:before {
+  content: "\e000"; }
+
+.icon-paragraph-justify:before {
+  content: "\e002"; }
+
+.icon-arrow-down:before {
+  content: "\e003"; }
+
+.icon-arrow-up:before {
+  content: "\e004"; }
+
+.icon-move-vertical-alt1:before {
+  content: "\e005"; }
+
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #e9f3ff;
+  color: #012651; }
+
+.container {
+  width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-transition: all 500ms ease;
+  -moz-transition: all 500ms ease;
+  -ms-transition: all 500ms ease;
+  transition: all 500ms ease; }
+  @media screen and (max-width: 960px) {
+    .container {
+      width: 760px; } }
+  @media screen and (max-width: 760px) {
+    .container {
+      width: 560px; } }
+  @media screen and (max-width: 560px) {
+    .container {
+      width: 360px; } }
+  @media screen and (max-width: 360px) {
+    .container {
+      width: 200px; } }
+
+.header {
+  background-color: #f06d06;
+  height: 40px; }
+  .header .site-name {
+    padding: 0px 5px;
+    font-size: 1.7em;
+    float: left;
+    text-transform: uppercase;
+    font-family: Cooper black, Arial black, Sans-Serif; }
+  .header .slide-trigger {
+    display: none;
+    float: left;
+    padding: 8px 5px;
+    font-size: 20px;
+    color: white;
+    -webkit-font-smoothing: antialiased;
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -ms-transition: all 500ms ease;
+    transition: all 500ms ease; }
+    @media screen and (max-width: 560px) {
+      .header .slide-trigger {
+        display: block;
+        float: right; }
+        .header .slide-trigger:hover {
+          cursor: pointer;
+          color: #012651; }
+        .header .slide-trigger:after {
+          content: "";
+          clear: both; } }
+  .header .nav {
+    padding: 10px 0px;
+    font-size: 15px;
+    float: left; }
+    .header .nav a {
+      padding: 13px 10px; }
+      .header .nav a:hover {
+        background-color: #f97a16; }
+      .header .nav a:active {
+        background-color: #be5605; }
+    @media screen and (max-width: 560px) {
+      .header .nav {
+        display: block;
+        float: left;
+        width: 360px; }
+        .header .nav:before, .header .nav:after {
+          content: "";
+          clear: both; } }
+    @media screen and (max-width: 360px) {
+      .header .nav {
+        display: none;
+        width: 200px; } }

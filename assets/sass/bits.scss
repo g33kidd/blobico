@@ -1,0 +1,12 @@
+//colors
+$light-blue: #E9F3FF;
+$dark-blue: #012651;
+$fogdog: #F06D06;
+$light-orange: #f97a16;
+$dark-orange: #be5605;
+$white: #fff;
+$black: #000;
+//fonts
+@mixin fontCooper {
+	font-family: Cooper Black, Arial Black, Sans-Serif;
+}

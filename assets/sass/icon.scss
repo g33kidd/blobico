@@ -1,0 +1,53 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('../fonts/icomoon.eot');
+	src:url('../fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/icomoon.svg#icomoon') format('svg'),
+		url('../fonts/icomoon.woff') format('woff'),
+		url('../fonts/icomoon.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+/* Use the following CSS code if you want to use data attributes for inserting your icons */
+[data-icon]:before {
+	font-family: 'icomoon';
+	content: attr(data-icon);
+	speak: none;
+	font-weight: normal;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+
+/* Use the following CSS code if you want to have a class per icon */
+/*
+Instead of a list of all class selectors,
+you can use the generic selector below, but it's slower:
+[class*="icon-"]:before {
+*/
+.icon-home:before, .icon-user:before, .icon-paragraph-justify:before, .icon-arrow-down:before, .icon-arrow-up:before, .icon-move-vertical-alt1:before {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+}
+.icon-home:before {
+	content: "\e001";
+}
+.icon-user:before {
+	content: "\e000";
+}
+.icon-paragraph-justify:before {
+	content: "\e002";
+}
+.icon-arrow-down:before {
+	content: "\e003";
+}
+.icon-arrow-up:before {
+	content: "\e004";
+}
+.icon-move-vertical-alt1:before {
+	content: "\e005";
+}
