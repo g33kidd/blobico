@@ -1,1 +1,3 @@
-// Global Site Javascript/jQuery file.
+$(document).ready(function(){
+    $('.slide-trigger').collapsable();
+});

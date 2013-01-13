@@ -71,7 +71,7 @@ body {
       width: 360px; } }
   @media screen and (max-width: 360px) {
     .container {
-      width: 200px; } }
+      width: 100%; } }
 
 .header {
   background-color: #f06d06;
@@ -81,7 +81,8 @@ body {
     font-size: 1.7em;
     float: left;
     text-transform: uppercase;
-    font-family: Cooper black, Arial black, Sans-Serif; }
+    font-family: Cooper black, Arial black, Sans-Serif;
+    font-weight: bold; }
   .header .slide-trigger {
     display: none;
     float: left;
@@ -89,39 +90,59 @@ body {
     font-size: 20px;
     color: white;
     -webkit-font-smoothing: antialiased;
-    -webkit-transition: all 500ms ease;
-    -moz-transition: all 500ms ease;
-    -ms-transition: all 500ms ease;
-    transition: all 500ms ease; }
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+    -ms-transition: all 200ms ease;
+    transition: all 200ms ease; }
     @media screen and (max-width: 560px) {
       .header .slide-trigger {
         display: block;
         float: right; }
-        .header .slide-trigger:hover {
+        .header .slide-trigger:active {
           cursor: pointer;
           color: #012651; }
         .header .slide-trigger:after {
           content: "";
           clear: both; } }
   .header .nav {
-    padding: 10px 0px;
     font-size: 15px;
-    float: left; }
-    .header .nav a {
-      padding: 13px 10px; }
-      .header .nav a:hover {
+    float: left;
+    font-family: Arial, Helvetica, Sans-serif; }
+    .header .nav .item {
+      float: left;
+      display: inline-block;
+      background-color: #f06d06; }
+      .header .nav .item:hover {
         background-color: #f97a16; }
-      .header .nav a:active {
+      .header .nav .item:active {
         background-color: #be5605; }
+      @media screen and (max-width: 560px) {
+        .header .nav .item {
+          width: 360px; } }
+      @media screen and (max-width: 360px) {
+        .header .nav .item {
+          width: 100%; } }
+    .header .nav a {
+      display: block;
+      text-decoration: none;
+      padding: 11px 10px;
+      color: #012651; }
+      .header .nav a:hover {
+        color: #e9f3ff; }
     @media screen and (max-width: 560px) {
       .header .nav {
-        display: block;
+        display: none;
         float: left;
-        width: 360px; }
+        background-color: #f06d06; }
         .header .nav:before, .header .nav:after {
           content: "";
           clear: both; } }
     @media screen and (max-width: 360px) {
       .header .nav {
         display: none;
-        width: 200px; } }
+        float: none;
+        width: 100%;
+        background-color: #f06d06; }
+        .header .nav:before, .header .nav:after {
+          content: "";
+          clear: both; } }

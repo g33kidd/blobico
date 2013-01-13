@@ -13,9 +13,9 @@
 				<div class="site-name">blobi.co</div>
 				<div class="slide-trigger"><span class="icon-paragraph-justify"></span></div>
 				<div class="nav">
-					<a href="#">Home</a>
-					<a href="#">About</a>
-					<a href="#">Team</a>
+					<div class="item"><a href="#">Home</a></div>
+					<div class="item"><a href="#">About</a></div>
+					<div class="item"><a href="#">Team</a></div>
 				</div>
 				
 			</div>

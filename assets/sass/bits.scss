@@ -6,7 +6,11 @@ $light-orange: #f97a16;
 $dark-orange: #be5605;
 $white: #fff;
 $black: #000;
+
 //fonts
 @mixin fontCooper {
 	font-family: Cooper Black, Arial Black, Sans-Serif;
+}
+@mixin fontArial {
+	font-family: Arial, Helvetica, Sans-serif;
 }

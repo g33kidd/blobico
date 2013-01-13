@@ -4,3 +4,9 @@
 	-ms-transition: $param $time $type;
 	transition: $param $time $type;
 }
+
+@mixin box-shad($horiz:.5em, $vert:.5em, $blur:0px, $spread:0px, $color:#000000){
+  -webkit-box-shadow: $horiz $vert $blur $spread $color;
+  -moz-box-shadow: $horiz $vert $blur $spread $color;
+  box-shadow: $horiz $vert $blur $spread $color;
+}
